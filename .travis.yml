@@ -4,6 +4,7 @@ node_js:
 script: KARMA_OPTS="--browsers Firefox" make -e test
 before_script:
   - export DISPLAY=:99.0
+  - npm install -g phantomjs-prebuilt
 services:
   - xvfb
 addons:
